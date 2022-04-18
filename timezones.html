@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 95%;
+          margin:30px;
+
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          background-color: white;
+          padding: 10px;
+          padding-right:0;
+          width:33%;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        .heading{
+            font-family:sans-serif;
+            color:rgb(12, 49, 170);
+            padding-bottom:100px:
+            margin:20px;
+        }
+        .xyz{
+            color:gb(6, 6, 95);
+            font-weight: bold;
+            float:right;
+        }
+        body{
+            background-color:#2c3e55;
+        }
+        </style>
+        
+        
+        <script src="main.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+
+    </nav>
+    
+    <table>
+        <tr>
+            <th colspan="3" class="heading">Current Local Times Around the World</th>
+        </tr>
+        <tr>
+          <td><a href="#" onclick="timecall('+4.5','time')">Afghanistan</a><span class="xyz" id="time"></span></td>
+          <td><a href="#" onclick="timecall('+2','time6')">Bulgaria</a><span class="xyz" id="time6"></span></td>
+          <td><a href="#" onclick="timecall('+2','time12')">Egypt</a><span class="xyz" id="time12"></td>
+        </tr>
+        <tr>
+          <td><a href="#" onclick="timecall('+1','time1')">Algeria</a><span class="xyz" id="time1"></span></td>
+          <td><a href="#" onclick="timecall('+8','time7')">China</a><span class="xyz" id="time7"></td>
+          <td><a href="#" onclick="timecall('+2','time13')">Finland</a><span class="xyz" id="time13"></td>
+        </tr>
+        <tr>
+          <td><a href="#" onclick="timecall('-3','time2')">Argentina</a><span class="xyz" id="time2"></span></td>
+          <td><a href="#" onclick="timecall('-6','time8')">Costa Rica</a><span class="xyz" id="time8"></td>
+          <td><a href="#" onclick="timecall('+1','time14')">France</a><span class="xyz" id="time14"></td>
+        </tr>
+        <tr>
+          <td><a href="#" onclick="timecall('+1','time3')">Austria</a><span class="xyz" id="time3"></span></td>
+          <td><a href="#" onclick="timecall('+1','time9')">Croatia</a><span class="xyz" id="time9"></td>
+          <td><a href="#" onclick="timecall('+1','time15')">Germany</a><span class="xyz" id="time15"></td>
+        </tr>
+        <tr>
+          <td><a href="#" onclick="timecall('+6','time4')">Bangladesh</a><span class="xyz" id="time4"></span></td>
+          <td><a href="#" onclick="timecall('+1','time10')">Denmark</a><span class="xyz" id="time10"></td>
+          <td><a href="#" onclick="timecall('+5.5','time16')">India</a><span class="xyz" id="time16"></td>
+        </tr>
+        <tr>
+          <td><a href="#" onclick="timecall('+6','time5')">Bhutan</a><span class="xyz" id="time5"></span></td>
+          <td><a href="#" onclick="timecall('-5','time11')">Ecuador</a><span class="xyz" id="time11"></td>
+          <td><a href="#" onclick="timecall('+5','time17')">Maldives</a><span class="xyz" id="time17"></td>
+        </tr>
+      </table>
+
+
+      
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script/>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+</html>
